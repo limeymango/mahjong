@@ -1,0 +1,19 @@
+body {
+  background-color: seagreen;
+}
+
+#player-view ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#player-view ul > li {
+  background-color: floralwhite;
+  border: 1px solid;
+  display: inline-flex;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  width: 70px;
+}
