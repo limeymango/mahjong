@@ -1,0 +1,26 @@
+body {
+  background-color: seagreen;
+}
+
+.tile {
+  background-color: floralwhite;
+  border: 1px solid;
+  height: 100px;
+  padding: 5px;
+  width: 70px;
+}
+
+.tile--selected {
+  border: 5px solid;
+}
+
+#player-view ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#player-view ul > li { 
+  display: inline-flex;
+  margin: 5px;
+}

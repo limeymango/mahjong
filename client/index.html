@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" media="screen"/>
+    <title>Mahjong</title>
+</head>
+<body>
+    <h1>mahjong!!!</h1>
+    <div id="setup-view">
+        <form id="create-game">
+          <label>Name:
+            <input id="username">
+          </label>
+          <button>New Game</button>
+        </form>
+    </div>
+    <div id="game-view">
+      <h2>It's <span id="active-player-name"></span>'s turn</h2>
+      <div id="player-view">
+        <div id='player-view--hand'>
+          <h2>Your hand:</h2>
+        </div>
+        <button id="discard">Discard Selected Card</button>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
