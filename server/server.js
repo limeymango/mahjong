@@ -18,16 +18,15 @@ let lobby = [];
 
 io.on('connection', (socket) => {
   lobby.push(socket);
+  socket.emit('name', lobby.length);
   if (lobby.length === 3) {
     // start a game
     new MahjongGame(...lobby);
     lobby = [];
   } else {
-    lobby.forEach(socket => {
-      socket.emit('message',
+    io.emit('message',
         `In the lobby: ${lobby.length} ` +
         `${lobby.length === 1 ? 'person' : 'people'}`);
-    });
   }
 });
 
